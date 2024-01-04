@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/LIl18g1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(8px); */
+    position: absolute;
+    filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    /* margin: 100px; */
+    background-color: rgba(86, 87, 83, 0.523);
+    filter: blur(10px);
+    /* filter: opacity(0.5); */
+    filter: opacity(150%);
+    color: white;
+    /* -webkit-filter: blur(8px); */
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 100px;
+    padding-top: 30px;
+}
+
+.navbar ul{
+    list-style: none;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-part{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-part .left-part{
+    width: 50%;
+    height: auto;
+    padding-left: 100px;
+    padding-top: 0px;
+}
+
+.main-part .left-part h1{
+    line-height: 45px;
+}
+
+.left-part p{
+    padding-top: 35px;
+    font-size: 15px;
+}
+
+.left-part button{
+    width: 100px;
+    height: 30px;
+    margin-top: 35px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+
+
+
+/* media query between 350px and 440px */
+
+@media((min-width:350px) and (max-width:440px)){
+
+    .main-container{
+        width: 100%;
+        height: 100vh;
+
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 50px;
+        padding-top: 50px;
+    }
+
+    .navbar h2{
+        font-size: 40px;
+        padding-block:10px ;
+    } 
+    
+    .navbar ul{
+        width: 50%;
+        height: auto;
+        display: none;
+    }
+
+    .navbar ul li{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    
+    .main-part{
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-part .left-part{
+        width: 50%;
+        height: auto;
+        /* border: 2px solid red; */
+        padding-left: 50px;
+    }
+    
+    .main-part .left-part h1{
+        line-height: 30px;
+        font-size:25px;
+    }
+    
+    .left-part p{
+        padding-top: 25px;
+        font-size: 15px;
+    }
+    
+    .left-part button{
+        width: 100px;
+        height: 20px;
+        margin-top: 35px;
+    }
+
+    .main-part .right-part img{
+        width: 150px;
+        height: 300px;
+    }
+
+};
+
+
+
+
+
+
+/* media query between 700px and 768px */
+
+@media((min-width:700px) and (max-width:768px)){
+
+    .main-container{
+        width: 100%;
+        height: 100vh;
+
+    }
+    
+    .navbar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 50px;
+        padding-top: 50px;
+    }
+
+    .navbar h2{
+        font-size: 20px;
+    } 
+    
+    .navbar ul{
+        width: 70%;
+        height: auto;
+    }
+
+    .navbar ul li{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    
+    .main-part{
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-part .left-part{
+        width: 50%;
+        height: auto;
+        /* border: 2px solid red; */
+        /* padding-right: 100px; */
+    }
+    
+    .main-part .left-part h1{
+        line-height: 30px;
+        font-size:25px;
+    }
+    
+    .left-part p{
+        padding-top: 25px;
+        font-size: 15px;
+    }
+    
+    .left-part button{
+        width: 70px;
+        height: 20px;
+        margin-top: 35px;
+    }
+
+    .main-part .right-part img{
+        width: 300px;
+        height: 400px;
+    }
+
+}
